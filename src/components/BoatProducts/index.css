@@ -1,0 +1,286 @@
+
+.noise-stars-img{
+    height: 30px;
+    width: 50px;
+}
+
+.noise-heading-1{
+    margin-left: 50px;
+}
+
+.noise-headphone-img-1{
+    height: 300px;
+    width: 150px;
+}
+
+.noise-headphone-img-3{
+    height: 250px;
+    width: 200px;
+}
+.noise-deals-img{
+    height: 250px;
+    width: 250px;
+}
+
+
+.noise-headphone-box{
+    height: 380px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noise-count-para{
+    margin-top: 40px;
+}
+.noise-symbol-btn{
+    height: 20px;
+    margin-top: 40px;
+}
+
+.noise-shop-btn{
+    width: 80px;
+}
+
+.noise-headphone-box-4{
+    height: 380px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noise-headphone-box-2{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.noise-headphone-box-3{
+    height: 500px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+.prod-add-cart-btn{
+    height: 30px;
+    width: 100px;
+    font-size: 13px;
+    border-radius: 30px;
+}
+.noise-headphone-img-2{
+    height: 250px;
+    width: 200px;
+}
+.noise-prod-para{
+    color: black;
+    text-decoration: none;
+}
+.noise-prod-para-sm{
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.noise-headphones{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.noise-headphones-1{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+.noise-headphones-2{
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    color: black;
+}
+
+.noise-headphones-section-2{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 200px
+}
+.noise-headphones-section-3{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+}
+
+.noise-fav-para{
+    margin-left: 100px;
+}
+.noise-section-3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.noise-section-category{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.noise-section-4{
+    height: 400px;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.noise-para-2{
+    margin-left: 200px;
+}   
+
+.noise-shop-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.noise-prod-container{
+    margin: 0;
+}
+
+.noise-results{
+    margin-left: 50px;
+}
+
+.noise-para-1{
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/* 
+.boat-stars-img{
+    height: 30px;
+    width: 50px;
+}
+
+.boat-heading-1{
+    margin-left: 50px;
+}
+.boat-deals-img{
+    height: 250px;
+    width: 250px;
+}
+
+.boat-count-para{
+    margin-top: 40px;
+}
+.boat-symbol-btn{
+    height: 20px;
+    margin-top: 40px;
+}
+.boat-sub-prod-2{
+    height: 200px;
+    margin-right: 600px;
+    margin-left: 50px;
+}
+.boat-sub-prod-1{
+    height: 200px;
+}
+.boat-sub-prod-3{
+    height: 200px;
+}
+.boat-shop-btn{
+    width: 80px;
+}
+.boat-headphone-box-3{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+.prod-add-cart-btn{
+    height: 30px;
+    width: 100px;
+    font-size: 13px;
+    border-radius: 30px;
+}
+.boat-headphone-img-2{
+    height: 200px;
+    width: 200px;
+}
+.boat-prod-para{
+    color: black;
+    text-decoration: none;
+}
+.boat-prod-para-sm{
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.boat-headphones-2{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    color: black;
+}
+.boat-fav-para{
+    margin-left: 100px;
+}
+.boat-para-2{
+    margin-left: 200px;
+}   
+
+.boat-shop-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.boat-prod-container{
+    margin: 0;
+}
+
+.boat-results{
+    margin-left: 50px;
+}
+
+.boat-para-1{
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+} */

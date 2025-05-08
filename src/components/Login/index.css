@@ -1,0 +1,133 @@
+.login-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.login-form-container{
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid;
+    border-color: #d8cfcf;
+    border-radius: 5px;
+    height: 300px;
+    width: 400px;
+    margin-left: 550px;
+    margin-top: 30px;
+}
+.login-form-container-2{
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid;
+    border-color: #d8cfcf;
+    border-radius: 5px;
+    height: 410px;
+    width: 400px;
+    margin-left: 550px;
+    margin-top: 30px;
+}
+.login-heading{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+.login-input{
+    border-color: #f0e7e7;
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid;
+}
+.login-label-input{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 400px;
+    margin-left: 30px;
+}
+
+.login-btn{
+    height: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px 20px;
+    background-color: #e7e020;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-right-btn{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid ;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.login-right-btn-2{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #e7e020;
+    color: black;
+    border: 1px solid ;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.login-img{
+    height: 600px;
+    width: 800px;
+    margin-left: 600px;
+}
+.login-left-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #e7e020;
+    color: black;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.login-left-btn-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    color: black;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-form-type{
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    margin-top: -30px;
+}

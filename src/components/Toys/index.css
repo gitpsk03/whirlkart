@@ -1,0 +1,179 @@
+
+.toys-stars-img{
+    height: 30px;
+    width: 50px;
+}
+
+.toys-heading-1{
+    margin-left: 50px;
+}
+
+.toys-headphone-img-1{
+    height: 300px;
+    width: 150px;
+}
+
+.toys-headphone-img-3{
+    height: 250px;
+    width: 200px;
+}
+.toys-deals-img{
+    height: 250px;
+    width: 250px;
+}
+
+
+.toys-headphone-box{
+    height: 380px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.toys-count-para{
+    margin-top: 40px;
+}
+.toys-symbol-btn{
+    height: 20px;
+    margin-top: 40px;
+}
+
+.toys-shop-btn{
+    width: 80px;
+}
+
+.toys-headphone-box-4{
+    height: 380px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.toys-headphone-box-2{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.toys-headphone-box-3{
+    height: 500px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+.prod-add-cart-btn{
+    height: 30px;
+    width: 100px;
+    font-size: 13px;
+    border-radius: 30px;
+}
+.toys-headphone-img-2{
+    height: 250px;
+    width: 200px;
+}
+.toys-prod-para{
+    color: black;
+    text-decoration: none;
+}
+.toys-prod-para-sm{
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.toys-headphones{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.toys-headphones-1{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+.toys-headphones-2{
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    color: black;
+}
+
+.toys-headphones-section-2{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 200px
+}
+.toys-headphones-section-3{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+}
+
+.toys-fav-para{
+    margin-left: 100px;
+}
+.toys-section-3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.toys-section-category{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.toys-section-4{
+    height: 400px;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.toys-para-2{
+    margin-left: 200px;
+}   
+
+.toys-shop-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.toys-prod-container{
+    margin: 0;
+}
+
+.toys-results{
+    margin-left: 50px;
+}
+
+.toys-para-1{
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}

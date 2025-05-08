@@ -1,0 +1,86 @@
+.pay-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+.pay-heading{
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+.pay-add{
+    display: flex;
+    flex-direction: row;
+}
+.circle{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.pay-sub-para{
+    margin-top: 20px;
+}
+.select-option{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    border: 1px solid;
+    margin-bottom: 2px;
+    border-color: rgb(180, 191, 191);
+}
+.place-order-btn{
+    height: 40px;
+    width: 280px;
+    margin-bottom: 50px;
+}
+.pay-sub{
+    display: flex;
+    flex-direction: column;
+}
+.pay-para{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.pay-para-box{
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.pay-para-add{
+    margin-left: 40px;
+}
+.pay-para-add-2{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.pay-btn{
+    width: 260px;
+}
+.change-para{
+    margin-top: 20px;
+    margin-left: 400px;
+}
+.change-para-2{
+    margin-top: 20px;
+    margin-left: 400px;
+}
+.pay-sum-para{
+    font-size: 10px;
+    padding: 10px;
+}
+.credit-sections{
+    display: flex;
+    flex-direction: column;
+}
+.credit-card-btn{
+    margin-bottom: 10px;
+}
+.credit-card-img{
+    height: 60px;
+    width: 60px;
+}
+.payment-main-con{
+    margin-left: 250px;
+}

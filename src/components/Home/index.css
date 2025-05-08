@@ -1,0 +1,122 @@
+.home-container{
+    background-color: rgb(229, 232, 234);
+}
+
+.home-img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.home-carousel-card{
+    height: 250px;
+    width: 100vw;
+}
+.home-carousel-container{
+    height: 250px;
+    width: 100vw;
+}
+.home-carousel-img{
+    height: 250px;
+    width: 100vw;
+}
+.home-category-box{
+    height: 380px;
+    width: 340px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.home-category-box-2{
+    height: 380px;
+    width: 340px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.home-category-box-3{
+    height: 380px;
+    width: 340px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.home-category-box-4{
+    height: 380px;
+    width: 320px;
+    background-color: white;
+    margin-top: 30px;
+}
+.home-category-box-5{
+    height: 280px;
+    width: 92.5vw;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.home-options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -30px;
+}
+.home-options-2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.home-option-box{
+    height: 100px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home-option-img{
+    height: 100px;
+    width: 150px;
+}
+.home-option-img-2{
+    height: 180px;
+    width: 148px;
+    margin-right: 25px;
+}
+.home-option-para{
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.home-more-para{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgb(24, 133, 228);
+}
+.home-more-para-2{
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none !important;
+}
+.category-para-home{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.category-para-home-2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.link-1{
+    text-decoration: none;
+}
+a {
+    text-decoration: none !important;
+}
