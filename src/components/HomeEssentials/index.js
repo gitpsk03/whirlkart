@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
+import { BsCurrencyRupee } from "react-icons/bs";
 import CartContext from '../../context/CartContext';
 import './index.css';
 
@@ -81,7 +82,7 @@ const HomeEssentials = () => {
                             <Link to='/product-page' state={{product}}>
                                 <img className="home-essentials-headphone-img-2" src={product.img} alt={product.name} />
                                 <p className='home-essentials-prod-para'>{product.name}</p>
-                                <p className='home-essentials-prod-para'>{product.price}</p>
+                                <p className='home-essentials-prod-para'><BsCurrencyRupee/>{product.price}</p>
                                 <p className='home-essentials-prod-para-sm'>Free delivery by 9th Apr</p>
                             </Link>
                             <button className='prod-add-cart-btn bg-warning' onClick={() => onAddToCart(product)}>Add to Cart</button>

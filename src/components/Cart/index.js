@@ -115,7 +115,7 @@ const Cart = () => {
                 <div className='cart-container-2' style={{'marginLeft':'-200px'}}>
                     <div className='cart-items-list-2'>
                         <h2>Your Whirlkart Cart is empty</h2>
-                        <Link to='/'>
+                        <Link to='/login'>
                             <button className='cart-signin-btn'>Sign in to your account</button>
                         </Link>
                     </div>

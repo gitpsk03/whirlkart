@@ -1,100 +1,74 @@
-import React, { useState } from 'react';
-import {v4 as uuidv4} from 'uuid'
+import React from 'react';
 import { BsCurrencyRupee } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
 import CartContext from '../../context/CartContext';
+import { useLocation } from 'react-router-dom';
 import './index.css'
-import { Link } from 'react-router-dom';
 
 const ProductItem = () => {
-    const [count, setCount] = useState(1);
-    const [currentPrice] = useState(350);
-    const onClickPlus = (e) => {
-        console.log('Plus button clicked', e);
-        setCount(prevCount => prevCount + 1);
-    };  
-    const onClickMinus = (e) => {
-        console.log('Minus button clicked', e);
-        if(count !== 1){
-            setCount(prevCount => prevCount - 1);
+    const location = useLocation()
+    const product = location.state?.product
+    const navigate = useNavigate();
+    const { addCartBtnClicked } = useContext(CartContext);
+    const {isLoginSuccessful} = useContext(CartContext)
+    const onAddToCart = (product) => {
+        if(!isLoginSuccessful) {
+            alert('Please login to add items to cart');
+            return;
         }
+        const uniqueId = `${product.id}-${Date.now()}`
+        const productWithUniqueId = {...product, id: uniqueId}
+        addCartBtnClicked(productWithUniqueId);
+        alert('Item added to the cart')
     };
-    return (
-        <CartContext.Consumer>
-            {value => {
-                const {addCartBtnClicked} = value;
-
-                const onAddCartBtnClicked = () => {
-                    const data = {
-                        id: uuidv4(),
-                        name: 'boAt Rockerz 255 Pro+',
-                        price: count*currentPrice,
-                        count: count,
-                        img: 'https://m.media-amazon.com/images/I/61+SW9nDTEL._AC_UL480_QL65_.jpg',
-                    }
-                    addCartBtnClicked(data)
-                }
-                return(
-                <div className='prod-item-container'>
-                    <div className='item-main'>
-                        <div>
-                            <img className='prod-img' src='https://m.media-amazon.com/images/I/61+SW9nDTEL._AC_UL480_QL65_.jpg' alt=''/>
-                        </div>
-                        <div className='item-data'>
-                            <p className='para-highlight'>BoAt Rockerz 255 Pro+</p>
-                            <p>Vist the BoAt Store</p>
-                            <p className='money'>999</p>
-                            <div className='para'>
-                                <p className='para-space-1'>Brand</p>
-                                <p>BoAt</p>
-                            </div>
-                            <div className='para'>
-                                <p className='para-space-2'>Colour</p>
-                                <p>Active Black</p>
-                            </div>
-                            <div className='para'>
-                                <p className='para-space-3'>Ear</p>
-                                <p>Placement In Ear</p>
-                            </div>
-                            <div className='para'>
-                                <p className='para-space-4'>Form Factor</p>
-                                <p>In Ear</p>
-                            </div>
-                            <div className='para'>
-                                <p className='para-space-5'>Impedance</p>
-                                <p>16 Ohm</p>
-                            </div>
-                            <br/>
-                            <p>About this item</p>
-                            <ul>
-                                <li>Playback- Leave all charging worries at bay as the Rockerz 255 Pro+ comes with a humongous battery back up of 60 Hours</li>
-                                <li>ASAP Charge- With a few minutes of ASAP Charge you can get upto 10 hours of audio time by charging them for only 10 mins</li>
-                                <li>Drivers- The unbeatable boAt signature sound shines through no matter what are you playing courtesy its 10mm drivers</li>
-                                <li>Controls- Its multi-function Integrated controls lends an intuitive listening experience with volume increase and Decrease and Stop and Play buttons</li>
-                            </ul>
-                            <p>See more product details</p>
-                        </div>
-                        <div className='prod-side-box'>
-                            <p><BsCurrencyRupee />{currentPrice}.00</p>
-                            <p>In Stock</p>
-                            <div className='count mb-2'>
-                                <button className='mt-4 prod-btn' type='button' onClick={onClickMinus}>-</button>
-                                <p className='pt-4'>{count}</p>
-                                <button className='mt-4 prod-btn'type='button' onClick={onClickPlus}>+</button>
-                            </div>
-                            <div className='d-flex'>
-                                <button className='prod-pay-btn bg-warning' onClick={onAddCartBtnClicked}>Add Cart</button>
-                                <Link to='/payment'>
-                                    <button className='prod-pay-btn bg-warning'>Buy Now</button>
-                                </Link>
-                            </div>
-                        </div>
+    const onClickBuy = () => {
+        if(!isLoginSuccessful) {
+            alert('Please login to Buy');
+            return;
+        }
+        navigate('/payment-page')
+    };
+    if(!product){
+        return <p>No Product found</p>
+    }
+    return(
+            <div className='prod-item-container'>
+            <div className='item-main'>
+                <div>
+                    <img className='prod-img' src={product.img} alt={product.name}/>
+                </div>
+                <div className='item-data'>
+                    <h1 className='para-highlight'>Product</h1>
+                    <p><BsCurrencyRupee />{product.price}</p>
+                    <p>Shipped In: It will take 14 to 21 days to dispatch this product.</p>
+                    <div className='d-flex flex-column'>
+                        <h6 style={{'fontSize':'13px'}}>Things you might want to know:</h6>
+                        <h6 style={{'fontSize':'13px'}}>Order value based discounts applicable - 5% above Rs. 5000;</h6>
+                        <p style={{'fontSize':'13px'}}>We ship worldwide</p>
+                        <p style={{'fontSize':'13px'}}>Free shipping within India on orders over ₹3000</p>
+                        <p style={{'fontSize':'13px'}}>All products are quality checked prior to dispatch</p>
+                        <p style={{'fontSize':'13px'}}>In the rare case of damage, we exchange or refund for the damaged piece if notified within 4 days</p>
+                        <p style={{'fontSize':'13px'}}>Transit time additional as per destination</p>
+                        <p style={{'fontSize':'13px'}}>We usually dispatch within 24 working hours subject to stock availability</p>
                     </div>
                 </div>
-                )
-            }
-        }
-        </CartContext.Consumer>
-    )
+                <div className='prod-side-box'>
+                    <p><BsCurrencyRupee />{product.price}</p>
+                    <p style={{'fontSize':'10px'}}>FREE delivery Thursday, 10 April on your first order</p>
+                    <p style={{'fontSize':'10px'}}>In Stock</p>
+                    <p style={{'fontSize':'10px'}}>Payment: Secure transaction</p>
+                    <p style={{'fontSize':'10px'}}>Ships from: Source</p>
+                    <p style={{'fontSize':'10px'}}>Sold by Retail Private Ltd</p>
+                    <p style={{'fontSize':'10px'}}>Packaging Ships in product packaging Include</p>
+                    <div className='d-flex flex-column'>
+                        <button className='prod-pay-btn bg-warning' onClick={() => onAddToCart(product)}>Add Cart</button>
+                        <button className='prod-pay-btn bg-warning' onClick={() => onClickBuy(product)}>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        )
 }
 
 export default ProductItem

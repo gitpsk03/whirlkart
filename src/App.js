@@ -45,7 +45,7 @@ const AppContent = ({ onSetSearchQuery, onSetCategory, searchQuery, category}) =
         <Route path='/noise-products' element={<NoiseProducts />} />
         <Route path='/boult-products' element={<BoultProducts />} />
         <Route path='/zebronics-products' element={<ZebronicsProducts />} />
-        <Route path='/product-item' element={<ProductItem />} />
+        <Route path='/product-page' element={<ProductItem />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/payment-page' element={<PaymentPage />} />
         <Route path='/account' element={<Account />} />

@@ -1,5 +1,6 @@
 import { Link, useLocation  } from 'react-router-dom';
 import { useContext, useState, useEffect } from 'react';
+import { BsCurrencyRupee } from "react-icons/bs";
 import CartContext from '../../context/CartContext';
 import './index.css';
 
@@ -406,7 +407,7 @@ const Categories = () => {
                             <Link to='/product-page' state={{product}}>
                                 <img className="footwear-headphone-img-2" src={product.img} alt={product.name} />
                                 <p className='footwear-prod-para'>{product.name}</p>
-                                <p className='footwear-prod-para'>{product.price}</p>
+                                <p className='footwear-prod-para'><BsCurrencyRupee/>{product.price}</p>
                                 <p className='footwear-prod-para-sm'>Free delivery by 9th Apr</p>
                             </Link>
                             <button className='prod-add-cart-btn bg-warning' onClick={() => onAddToCart(product)}>Add to Cart</button>
