@@ -1,7 +1,3 @@
-Here’s a structured documentation draft for your **Whirlkart** project based on the provided code. You can include this in your GitHub README or as part of your project portfolio:
-
----
-
 # 🛒 Whirlkart
 
 **Whirlkart** is a full-featured e-commerce web application built using **React.js**. Its core functionalities are product browsing, cart management, search, category-based filtering, user account handling, and a payment flow.
@@ -98,18 +94,3 @@ Here’s a structured documentation draft for your **Whirlkart** project based o
    npm start
    ```
 
----
-
-## 📝 Future Enhancements
-
-* Integrate real-time authentication using Firebase/Auth0.
-* Use Redux for more complex state handling.
-* Add product reviews and wishlist features.
-* Implement pagination and lazy loading.
-* Backend integration using Node.js/Express + MongoDB.
-
----
-
-If you'd like, I can also generate a professional README file from this content or help you with deploying it live on platforms like Vercel or Netlify.
-
-Want that?
